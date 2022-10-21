@@ -11,14 +11,14 @@ h1 {
 h2 {
     font-size: 28px;
 }
+
+h3 {
+    margin-top: 5px;
+}
 span {
     color: grey;
 }
 
-img {
-    width: 180px;
-    height: 180px;
-}
 section, header{
     padding: 10px 60px 20px 60px;
     background-color: white;
@@ -40,12 +40,72 @@ header li {
     margin-bottom: 15px;
 }
 
-header address img {
+.address-icon {
     width: 16px;
     height: 16px;
     background-color: cornflowerblue;
     margin-right: 8px;
     padding: 8px;
     vertical-align: middle;  /* // działa tylko dla elementów inline! wyrównanie ikon do tekstu */
+
+}
+
+.circle {
     border-radius: 50%;
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+}
+
+.hobbies {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies li {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.hobbies div {
+    margin-left: 20px;
+}
+
+.hobbies p {
+    color: gray;
+   
+}
+
+p {
+    line-height: 1.5;
+}
+
+.cv-download-link {
+    border: 2px solid cornflowerblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 26px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.cv-download-link:hover {
+    color: white;
+    background-color: cornflowerblue;
+}
+.cv-download-link:focus {
+    outline: none;
+    color: white;
+    background-color: cornflowerblue;
+}
+.cv-download-link:active {
+    text-decoration: underline;
 }
