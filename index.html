@@ -6,109 +6,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV in HTML & CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <img class="profile-picture circle" src="default-avatar.png" />
+        <header class="container_header">
+            <img class="header_profilePicture circle" src="/images/default-avatar.png" alt="Zdjęcie profilowe" />
             <div>
                 <h1>Amanda Chawińska</h1>
-                <span>Frontend developer</span>
+                <span class="header_workplace">Frontend developer</span>
+                <p>I'm passionate programming, especialy Frontend Development, currently looking for new job
+                    opportunities.</p>
                 <div>
-                    <a class="cv-download-link" href="https://gofile.io/d/rs49bK">Pobierz CV</a>
+                    <a class="header_cvDownloadLink" href="https://gofile.io/d/rs49bK" target="_blank">Pobierz CV</a>
                 </div>
             </div>
-            <address>
-                <ul>
-                    <li><img class="address-icon circle" src="phone.png" /><b>Numer telefonu:</b><a
-                            href="tel:666 464 465">666464654</a></li>
-                    <li><img class="address-icon circle" src="mail.png" /><b>Adres email </b><a
-                            href="mailto:amanda.chawinska@spoko.pl">email@mail.com</a></li>
-                    <li><img class="address-icon circle" src="birthday-cake.png" /><b>Data urodzenia</b></li>
-                    <li><img class="address-icon circle" src="pin.png" /><b>Miejsce zamieszkania</b></li>
+            <address class="header_address">
+                <ul class="header_ul">
+                    <li>
+                        <img class="header_addressIcon circle" src="/images/phone.png" />
+                        <a class="header_link" href="tel:666 464 465">500688117</a>
+                    </li>
+                    <li>
+                        <img class="header_addressIcon circle" src="/images/mail.png" /><b>Adres email </b>
+                        <a class="header_link" href="mailto:amanda.chawinska@spoko.pl">amanda.chawinska@spoko.pl</a>
+                    </li>
+                    <li>
+                        <img class="header_addressIcon circle" src="/images/birthday-cake.png" /><b>2 maja</b>
+                    </li>
+                    <li><img class="header_addressIcon circle" src="/images/pin.png" /><b>Kraków</b>
+                    </li>
                 </ul>
             </address>
         </header>
-        <main>
-            <section>
-                <h2>O mnie</h2>
-                <p>
-                    Mam na imie <b>Amanda</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-                    corrupti
-                    tempora ut
-                    impedit magni laudantium, unde qui obcaecati perferendis, explicabo minus illum error tenetur
-                    suscipit
-                    aspernatur quae accusantium eaque atque.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia natus tempora numquam, vitae eos modi
-                    repudiandae
-                    impedit ullam esse molestiae laudantium doloribus sed dolores enim fugit quibusdam harum accusamus.
-                    Quae.
-                </p>
-            </section>
-            <section>
-                <h2>Doswiadczenie zawodowe</h2>
-                <ul>
-                    <li>2020-obecnie: Wiceprezes KNPZ</li>
-                    <li>praktyki</li>
+        <main class="container_main">
+            <section class="container_section">
+                <h2>My skillset includes </h2>
+                <ul class="container_ul">
+                    <li>Semantic & accessible HTML</li>
+                    <li>Responsive Web Design</li>
+                    <li>Teamwork</li>
+                    <li>Markdown</li>
+                    <li>Immutability</li>
+                    <li>CSS BEM convention</li>
+                    <li>CSS FLexbox</li>
+                    <li>CSS Grid</li>
+                    <li>JavaScript: ES6+</li>
+                    <li>Working with API</li>
+                    <li>Promises, Async/Await</li>
+                    <li>GitHub Pull Requests & Review</li>
+                    <li>Trello</li>
+                    <li>Scrum</li>
+                    <li>NPM</li>
+                    <li>Git</li>
+                    <li>JS classes</li>
+                    <li>My sql</li>
+                    <p>I had a contact with:</p>
+                    <li>React</li>
+                    <li>React Router</li>
+                    <li>Redux-Saga</li>
+                    <li>Redux (Toolkit)</li>
+                    <li>React Hooks</li>
+                    <li>Error handling</li>
+                    <li>Python</li>
+                    <li>Java</li>
                 </ul>
             </section>
-            <section>
-                <h2>Języki</h2>
-                <ul>
-                    <li>Angielski - B1</li>
-                    <li>Polski - ojczysty</li>
+            <section class="container_section">
+                <h2>What I want to learn next</h2>
+                <ul class="container_ul">
+                    <li>TypeScript</li>
+                    <li>Node.js</li>
+                    <li>Unit testing</li>
                 </ul>
             </section>
-            <section>
-                <h2>Wykształcenie</h2>
-                <ul>
-                    <li>2020-2022: <a href="https://uek.krakow.pl">UEK</a></li>
-                    <li>2016-2020: <a href="https://www.wszib.edu.pl">WSZIB</a></li>
-                </ul>
+            <section class="container_section">
+                <h2>Portfolio</h2>
+                <p>My recent projects</p>
+                <div>Currency Coverter</div>
+                <div>List task</div>
             </section>
             <section>
                 <h2>Zainteresowania</h2>
                 <ul class="hobbies">
                     <li>
-                        <img src="film.png" />
+                        <img src="/images/film.png" />
                         <div>
                             <h3>Seriale</h3>
 
                             <p>Oglądanie seriali z gatunku fantasy, komedię</p>
                         </div>
                     </li>
-
-
                     <li>
-                        <img src="car.png" />
+                        <img src="/images/car.png" />
                         <div>
                             <h3>Car detailing</h3>
 
                             <p>Dbanie o auto, polerowanie, nakładanie powłok, stosowanie róznych kosmetyków</p>
                         </div>
                     </li>
-
-
                     <li>
-                        <img src="computer.png" />
+                        <img src="/images/computer.png" />
                         <div>
                             <h3>Gry komputerowe</h3>
                             <p>RPG głównie np. wiedźmin, ac</p>
                         </div>
                     </li>
-
-
                     <li>
-                        <img src="programming.png" />
+                        <img src="/images/programming.png" />
                         <div>
                             <h3>Nowe technologie - (informatyka,programowanie)</h3>
                             <p>Budowa komputera i jak on działa, frontend, backend</p>
                         </div>
                     </li>
-
                 </ul>
+            </section>
+            <section class="container_section">
+                <p> I'm open to new challenges. I learn new skills very quickly. If you need in your team someone young,
+                    ambitious and strongly committed to their work, feel free to contact me!</p>
             </section>
         </main>
     </div>
