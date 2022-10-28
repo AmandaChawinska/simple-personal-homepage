@@ -1,0 +1,139 @@
+body {
+    font-family: Arial;
+    background-color: #f0f8ff;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 36px;
+ margin-bottom: 10px;
+}
+h2 {
+    font-size: 28px;
+    border-bottom: 2px solid #808080;
+}
+
+h3 {
+    margin-top: 5px;
+}
+.header_workplace {
+    color: #808080;
+}
+
+.container {
+    box-shadow: 0 0 20px #808080;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+section {
+    border: 2px solid #6495ed;
+margin: 20px 30px;
+box-shadow: 0 0 20px #808080;
+}
+
+.container_ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+section, header{
+    padding: 10px 60px 20px 60px;
+}
+
+.container_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.header_ul {
+    list-style: none;
+}
+
+ li {
+    margin-bottom: 15px;
+   
+}
+.container_section li {
+    list-style-image: url(/images/list-blue\ .svg);
+}
+
+.header_addressIcon {
+    width: 16px;
+    height: 16px; 
+    background-color: #6495ed;
+    margin-right: 8px;
+    padding: 8px; 
+    vertical-align: middle;  /* // działa tylko dla elementów inline! wyrównanie ikon do tekstu */
+
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.header_profilePicture {
+    width: 180px;
+    height: 180px;
+    margin-right: 10px;
+}
+
+.hobbies {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies li {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.hobbies div {
+    margin-left: 20px;
+}
+
+.hobbies p {
+    color: #808080;
+   
+}
+
+p {
+    line-height: 1.5;
+}
+
+.header_cvDownloadLink {
+    border: 2px solid #6495ed;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 26px;
+    transition: background-color 0.5s, color 0.5s;
+    box-shadow: 0 0 20px gray;
+}
+
+.header_cvDownloadLink:hover {
+    color: #ffffff;
+    background-color: cornflowerblue;
+}
+.header_cvDownloadLink:focus {
+    outline: none;
+    color: #ffffff;
+    background-color: cornflowerblue;
+}
+.header_cvDownloadLink:active {
+    text-decoration: underline;
+}
+.header_link {
+    text-decoration: none;
+    color:hsl(244, 84%, 51%);
+}
+.header_link:hover {
+    color:hsl(244, 100%, 35%);
+}
