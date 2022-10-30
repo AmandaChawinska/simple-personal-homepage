@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV in HTML & CSS</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/slider.css">
 </head>
 
 <body>
@@ -16,10 +17,10 @@
             <div>
                 <h1>Amanda Chawińska</h1>
                 <span class="header_workplace">Frontend developer</span>
-                <p>I'm passionate programming, especialy Frontend Development, currently looking for new job
+                <p>I'm passionate about programming, especialy Frontend Development, currently looking for new job
                     opportunities.</p>
                 <div>
-                    <a class="header_cvDownloadLink" href="https://gofile.io/d/rs49bK" target="_blank">Pobierz CV</a>
+                    <a class="header_cvDownloadLink" href="https://gofile.io/d/rs49bK" target="_blank">Download CV</a>
                 </div>
             </div>
             <address class="header_address">
@@ -63,15 +64,14 @@
                     <li>Git</li>
                     <li>JS classes</li>
                     <li>My sql</li>
-                    <p>I had a contact with:</p>
                     <li>React</li>
                     <li>React Router</li>
                     <li>Redux-Saga</li>
                     <li>Redux (Toolkit)</li>
                     <li>React Hooks</li>
                     <li>Error handling</li>
-                    <li>Python</li>
-                    <li>Java</li>
+                    <li>Python (basic)</li>
+                    <li>Java (basic)</li>
                 </ul>
             </section>
             <section class="container_section">
@@ -82,11 +82,42 @@
                     <li>Unit testing</li>
                 </ul>
             </section>
-            <section class="container_section">
+            <section class="container_section slider_main">
                 <h2>Portfolio</h2>
                 <p>My recent projects</p>
-                <div>Currency Coverter</div>
-                <div>List task</div>
+                <div id="slider">
+                    <div id="top-row">
+                        <img class="arrow arrow-left" id="arrow-left" src="/images/arrow-left.png" alt="" />
+                        <div id="slides-container">
+                            <img id="slide1" class="slide active" src="/images/ScreenMovieBrowser.png" />
+                            <p >Live: <a href="https://wknott.github.io/movies-browser/#/movies" target="_blank">Movies Browser</a> </p>
+                            <p >Repository: <a href="https://github.com/wknott/movies-browser" target="_blank">Code</a> </p>
+                            <img id="slide2" class="slide" src="/images/todoList-JS.png" />
+                            <p class="slide">Live:</p>
+                            <p class="slide">Repository: <a href="https://github.com/AmandaChawinska/List-task"> Code</a></p>
+                            <img id="slide3" class="slide" src="/images/todoList-React.png" />
+                            <p class="slide">Live:</p>
+                            <p class="slide">Repository: </p>
+                            <img id="slide4" class="slide" src="/images/currencyConverter-JS.png" />
+                            <p class="slide">Live:</p>
+                            <p class="slide">Repository: </p>
+                            <img id="slide5" class="slide" src="/images/currencyConverter-React.png" />
+                            <p class="slide">Live:</p>
+                            <p class="slide">Repository: </p>
+                        </div>
+
+                        <img class="arrow arrow-right" id="arrow-right" src="/images/arrow-right.png" alt="" />
+                    </div>
+                    <div id="bottom-row">
+                        <div id="dots">
+                            <div id="dot1" class="dot"></div>
+                            <div id="dot2" class="dot"></div>
+                            <div id="dot3" class="dot"></div>
+                            <div id="dot4" class="dot"></div>
+                            <div id="dot5" class="dot"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <h2>Zainteresowania</h2>
@@ -126,10 +157,11 @@
             <section class="container_section">
                 <p> I'm open to new challenges. I learn new skills very quickly. If you need in your team someone young,
                     ambitious and strongly committed to their work, feel free to contact me!
-                    <a href="#contact" class="header__link">Click contact</a>
+                    <a href="#contact" class="header__link">Click contact👆</a>
                 </p>
             </section>
         </main>
+        <script src="app.js"></script>
     </div>
 </body>
 
