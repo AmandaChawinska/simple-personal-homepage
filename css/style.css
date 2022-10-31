@@ -56,7 +56,7 @@ section, header{
    
 }
 .container_section li {
-    list-style-image: url(/images/list-blue\ .svg);
+    list-style-image: url(./images/list-blue\ .svg);
 }
 
 .header_addressIcon {
